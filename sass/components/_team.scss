@@ -1,0 +1,77 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: $button-bg-color;
+}
+
+.team-set {
+  @extend %list;
+  display: flex;
+}
+
+.team-set__item {
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  box-shadow: $box-team-shadow;
+  background-color: $white-color;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-set__cont {
+  padding: 30px 32px;
+}
+
+.team-set__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-set__paragraph {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  color: $secondary-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.icons-set {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+}
+
+.icons-set__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icons-set__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: $white-color;
+  fill: $clients-networks-color;
+
+  transition: background-color 250ms $transit-time, fill 250ms $transit-time;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $white-color;
+  }
+}

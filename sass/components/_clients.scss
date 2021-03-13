@@ -1,0 +1,33 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-set {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+}
+
+.client-set__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-set__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $clients-networks-color;
+  border-radius: 4px;
+  fill: $clients-networks-color;
+
+  transition: border-color 250ms $transit-time, fill 250ms $transit-time;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+}
