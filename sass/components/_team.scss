@@ -1,28 +1,67 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: $button-bg-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-set {
   @extend %list;
-  display: flex;
+  margin: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team-set__item {
   border-radius: 0px 0px 4px 4px;
-  overflow: hidden;
   box-shadow: $box-team-shadow;
-  background-color: $white-color;
+  max-width: 450px;
+  margin: 15px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
+.team-set__thumb {
+  height: 460px;
+  width: 100%;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 374px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 260px;
+  }
+}
+
+.team-set__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .team-set__cont {
-  padding: 30px 32px;
+  padding: 30px 32px 24px 32px;
+  background-color: $white-color;
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+  }
 }
 
 .team-set__title {
