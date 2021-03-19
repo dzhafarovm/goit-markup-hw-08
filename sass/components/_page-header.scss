@@ -1,15 +1,18 @@
 .page-header {
-  display: flex;
-  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
   min-height: 80px;
   border-bottom: 1px solid $header-border;
-  /* background-color: $white-color; */
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 0;
+  }
 }
 
 .page-header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .page-header__nav {
@@ -139,6 +142,7 @@
 .page-header__btn {
   display: block;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   border: none;
   background-color: $white-color;
