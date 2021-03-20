@@ -22,11 +22,11 @@
     <header class="page-header">
       <div class="container page-header__container">
         <!-- Блок навигации -->
-        <nav class="page-header__nav">
-          <a href="./index.html" class="logo"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
+        <a href="./index.html" class="logo"
+          ><span class="logo--accent">Web</span>Studio</a
+        >
 
+        <nav class="page-header__nav">
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия</a>
@@ -40,27 +40,33 @@
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
+
+          <ul class="adr-nav">
+            <li class="adr-nav__item">
+              <a href="mailto:info@devstudio.com" class="adr-nav__link">
+                <svg class="adr-nav__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+
+            <li class="adr-nav__item">
+              <a href="tel:+380961111111" class="adr-nav__link">
+                <svg class="adr-nav__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </nav>
 
-        <ul class="adr-nav">
-          <li class="adr-nav__item">
-            <a href="mailto:info@devstudio.com" class="adr-nav__link">
-              <svg class="adr-nav__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-
-          <li class="adr-nav__item">
-            <a href="tel:+380961111111" class="adr-nav__link">
-              <svg class="adr-nav__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <button class="page-header__btn" type="button" aria-label="Open menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -121,6 +127,11 @@
               <a href="" class="product">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
+                    srcset="
+                      ./images/portfolio/page2-1.jpg    1x,
+                      ./images/portfolio/page2-1@2x.jpg 2x
+                    "
                     src="./images/portfolio/page2-1.jpg"
                     alt="Ноутбук"
                     width="370"
@@ -148,6 +159,11 @@
               <a href="" class="product">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
+                    srcset="
+                      ./images/portfolio/page2-2.jpg    1x,
+                      ./images/portfolio/page2-2@2x.jpg 2x
+                    "
                     src="./images/portfolio/page2-2.jpg"
                     alt="Два баскетболиста"
                     width="370"
@@ -177,6 +193,11 @@
               <a href="" class="product">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
+                    srcset="
+                      ./images/portfolio/page2-3.jpg    1x,
+                      ./images/portfolio/page2-3@2x.jpg 2x
+                    "
                     src="./images/portfolio/page2-3.jpg"
                     alt="Логотип ресторана Seafood"
                     width="370"
@@ -204,6 +225,11 @@
               <a href="" class="product">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
+                    srcset="
+                      ./images/portfolio/page2-4.jpg    1x,
+                      ./images/portfolio/page2-4@2x.jpg 2x
+                    "
                     src="./images/portfolio/page2-4.jpg"
                     alt="Наушники"
                     width="370"
@@ -231,6 +257,11 @@
               <a href="" class="product">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
+                    srcset="
+                      ./images/portfolio/page2-5.jpg    1x,
+                      ./images/portfolio/page2-5@2x.jpg 2x
+                    "
                     src="./images/portfolio/page2-5.jpg"
                     alt="Две коробки"
                     width="370"
@@ -258,6 +289,11 @@
               <a href="" class="product">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
+                    srcset="
+                      ./images/portfolio/page2-6.jpg    1x,
+                      ./images/portfolio/page2-6@2x.jpg 2x
+                    "
                     src="./images/portfolio/page2-6.jpg"
                     alt="Монитор"
                     width="370"
@@ -285,6 +321,11 @@
               <a href="" class="product">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
+                    srcset="
+                      ./images/portfolio/page2-7.jpg    1x,
+                      ./images/portfolio/page2-7@2x.jpg 2x
+                    "
                     src="./images/portfolio/page2-7.jpg"
                     alt="Открытая книга"
                     width="370"
@@ -312,6 +353,11 @@
               <a href="" class="product">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
+                    srcset="
+                      ./images/portfolio/page2-8.jpg    1x,
+                      ./images/portfolio/page2-8@2x.jpg 2x
+                    "
                     src="./images/portfolio/page2-8.jpg"
                     alt="Лейбл"
                     width="370"
@@ -339,6 +385,11 @@
               <a href="" class="product">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
+                    srcset="
+                      ./images/portfolio/page2-9.jpg    1x,
+                      ./images/portfolio/page2-9@2x.jpg 2x
+                    "
                     src="./images/portfolio/page2-9.jpg"
                     alt="Ноутбук"
                     width="370"
@@ -369,64 +420,66 @@
     <!-- Подвал -->
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <div>
-          <a href="./index.html" class="logo page-footer__logo"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
+        <div class="page-footer__content">
+          <div class="page-footer__box">
+            <a href="./index.html" class="logo page-footer__logo"
+              ><span class="logo--accent">Web</span>Studio</a
+            >
 
-          <address class="address">
-            <p class="address__paragraph">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="address__set">
-              <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link"
-                  >info@example.com</a
-                >
+            <address class="address">
+              <p class="address__paragraph">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="address__set">
+                <li class="address__item">
+                  <a href="mailto:info@example.com" class="address__link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380991111111" class="address__link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="connect">
+            <p class="connect__name">Присоединяйтесь</p>
+
+            <ul class="connect-set">
+              <li class="connect-set__item">
+                <a href="" class="connect-set__link">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380991111111" class="address__link"
-                  >+38 099 111 11 11</a
-                >
+
+              <li class="connect-set__item">
+                <a href="" class="connect-set__link">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="connect-set__item">
+                <a href="" class="connect-set__link">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="connect-set__item">
+                <a href="" class="connect-set__link">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="connect">
-          <p class="connect__name">Присоединяйтесь</p>
-
-          <ul class="connect-set">
-            <li class="connect-set__item">
-              <a href="" class="connect-set__link">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="connect-set__item">
-              <a href="" class="connect-set__link">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="connect-set__item">
-              <a href="" class="connect-set__link">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="connect-set__item">
-              <a href="" class="connect-set__link">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="foot-form">
