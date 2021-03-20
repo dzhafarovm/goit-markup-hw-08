@@ -7,8 +7,9 @@
   padding: 48px 40px;
   background-color: $white-color;
 
+  opacity: 0;
   transform: translateX(100%);
-  transition: transform 250ms $transit-time;
+  transition: transform 250ms $transit-time, opacity 250ms $transit-time;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -16,6 +17,7 @@
 }
 
 .menu-container.is-open {
+  opacity: 1;
   transform: translateX(0);
 
   @media screen and (min-width: 768px) {
