@@ -84,7 +84,8 @@
 }
 
 .product {
-  display: block;
+  display: flex;
+  flex-direction: column;
 
   &:hover,
   &:focus {
@@ -136,6 +137,7 @@
 }
 
 .product__cont {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid $portfolio-card;
   border-left: 1px solid $portfolio-card;
