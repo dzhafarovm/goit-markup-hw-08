@@ -1166,6 +1166,10 @@ img {
           transform: translate(-50%, -50%) scale(0.5);
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 .modal {
   position: absolute;
   top: 50%;
