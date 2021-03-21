@@ -24,13 +24,21 @@
   }
 }
 
-.button-set__item:not(:last-child) {
-  margin-right: 8px;
-}
+.button-set__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 
-.button-set__item:first-child {
-  @media screen and (max-width: 768px) {
-    margin-bottom: 15px;
+  &:not(:last-child) {
+    @media screen and (max-width: 388px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &:first-child {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
 }
 
