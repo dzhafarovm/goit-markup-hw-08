@@ -441,7 +441,7 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
@@ -449,6 +449,7 @@ img {
 @media screen and (min-width: 1200px) {
   .block-title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
