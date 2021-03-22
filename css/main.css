@@ -384,7 +384,7 @@ img {
   }
 }
 
-.can-set__link {
+.can-set__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,6 +405,13 @@ img {
   font-weight: 700;
   line-height: 1.15;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .can-set__title {
+    text-align: start;
+  }
 }
 
 .can-set__paragraph {

@@ -31,7 +31,7 @@
   }
 }
 
-.can-set__link {
+.can-set__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +47,11 @@
   font-weight: 700;
   line-height: 1.15;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .can-set__paragraph {
