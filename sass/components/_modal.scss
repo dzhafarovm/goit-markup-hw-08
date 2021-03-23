@@ -194,10 +194,6 @@
   border: 2px solid $primary-text-color;
   border-radius: 2px;
   margin-right: 8px;
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 7px;
-  }
 }
 
 .form__agreement-link {
